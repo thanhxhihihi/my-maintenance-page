@@ -3,76 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trường THPT ABC - Trang chủ</title>
+    <title>Trường THCS Lãng Nga - Nơi chắp cánh ước mơ</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <header>
+    <div class="top-bar">
         <div class="container">
-            <div class="logo">
-                <img src="https://via.placeholder.com/60x60?text=LOGO" alt="Logo Trường">
-                <h1>Trường THPT ABC</h1>
+            <p>Email: thcslanga@email.com | Điện thoại: 0123.456.789</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
-            <nav>
+        </div>
+    </div>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="header-left">
+                <img src="https://via.placeholder.com/80x80?text=LOGO" alt="Logo Trường THCS Lãng Nga" class="school-logo">
+                <div class="school-info">
+                    <h1>TRƯỜNG THCS LÃNG NGA</h1>
+                    <p>UY TÍN - CHẤT LƯỢNG - HIỆU QUẢ</p>
+                </div>
+            </div>
+            <nav class="main-nav">
                 <ul>
-                    <li><a href="#">Trang Chủ</a></li>
-                    <li><a href="#">Giới Thiệu</a></li>
-                    <li><a href="#">Tuyển Sinh</a></li>
-                    <li><a href="#">Tin Tức & Sự Kiện</a></li>
-                    <li><a href="#">Liên Hệ</a></li>
+                    <li><a href="#" class="active"><i class="fa-solid fa-house"></i> Trang chủ</a></li>
+                    <li class="dropdown">
+                        <a href="#">Giới thiệu <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Lịch sử hình thành</a>
+                            <a href="#">Cơ cấu tổ chức</a>
+                            <a href="#">Thành tích</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#">Văn bản <i class="fas fa-caret-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#">Văn bản Bộ GD&ĐT</a>
+                            <a href="#">Văn bản Sở GD&ĐT</a>
+                        </div>
+                    </li>
+                    <li><a href="#">Tin tức</a></li>
+                    <li><a href="#">Thời khóa biểu</a></li>
+                    <li><a href="#">Thư viện</a></li>
+                    <li><a href="#">Liên hệ</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <h2>Chào mừng đến với Trường THPT ABC</h2>
-            <p>Nơi ươm mầm tri thức và chắp cánh ước mơ.</p>
-            <a href="#" class="btn">Tìm hiểu thêm</a>
-        </div>
-    </section>
-
-    <section class="about">
-        <div class="container">
-            <h2>Về chúng tôi</h2>
-            <p>Trường THPT ABC tự hào là một trong những ngôi trường hàng đầu trong khu vực, với bề dày truyền thống dạy và học. Chúng tôi cam kết mang đến một môi trường giáo dục chất lượng cao, phát triển toàn diện cả về kiến thức, kỹ năng và phẩm chất đạo đức cho học sinh.</p>
-            <p>Đội ngũ giáo viên giàu kinh nghiệm, nhiệt huyết cùng cơ sở vật chất hiện đại là nền tảng vững chắc cho sự thành công của mỗi học sinh.</p>
-        </div>
-    </section>
-
-    <section class="news-events">
-        <div class="container">
-            <h2>Tin tức & Sự kiện nổi bật</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Khai giảng năm học mới 2024-2025</h3>
-                    <p>Ngày 05/09/2024, Trường THPT ABC đã long trọng tổ chức lễ khai giảng năm học mới với sự tham gia của đông đảo giáo viên, học sinh và phụ huynh.</p>
-                    <a href="#">Đọc thêm</a>
-                </div>
-                <div class="card">
-                    <h3>Cuộc thi Khoa học Kỹ thuật cấp trường</h3>
-                    <p>Cuộc thi đã diễn ra thành công tốt đẹp, tìm ra nhiều dự án sáng tạo và tiềm năng từ các em học sinh khối 10, 11, 12.</p>
-                    <a href="#">Đọc thêm</a>
-                </div>
-                <div class="card">
-                    <h3>Hoạt động ngoại khóa "Hành trình Xanh"</h3>
-                    <p>Học sinh nhà trường đã tham gia hoạt động trồng cây và dọn dẹp vệ sinh môi trường, nâng cao ý thức bảo vệ thiên nhiên.</p>
-                    <a href="#">Đọc thêm</a>
-                </div>
+    <section class="slider-section">
+        <div class="slider">
+            <img src="https://via.placeholder.com/1200x400?text=Anh+Slider+1" alt="Slider Image 1" class="slider-img active">
+            <img src="https://via.placeholder.com/1200x400?text=Anh+Slider+2" alt="Slider Image 2" class="slider-img">
+            <img src="https://via.placeholder.com/1200x400?text=Anh+Slider+3" alt="Slider Image 3" class="slider-img">
+            <div class="slider-nav">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
     </section>
 
+    <div class="main-content container">
+        <div class="content-area">
+            <section class="welcome-section section-box">
+                <h2>Chào mừng đến với Trường THCS Lãng Nga</h2>
+                <p>Nơi ươm mầm tri thức và chắp cánh ước mơ cho thế hệ tương lai. Chúng tôi cam kết mang đến một môi trường học tập thân thiện, sáng tạo và chất lượng cao, giúp học sinh phát triển toàn diện về kiến thức, kỹ năng và phẩm chất đạo đức.</p>
+                <img src="https://via.placeholder.com/600x300?text=Hinh+Anh+Truong+Hoc" alt="Hình ảnh trường học" class="img-responsive">
+            </section>
+
+            <section class="news-events-section section-box">
+                <h2>Tin tức - Sự kiện</h2>
+                <div class="news-list">
+                    <div class="news-item">
+                        <img src="https://via.placeholder.com/150x100?text=News1" alt="News 1">
+                        <div class="news-info">
+                            <h4><a href="#">Lễ Khai giảng năm học 2024 - 2025</a></h4>
+                            <p class="news-date"><i class="far fa-calendar-alt"></i> 05/09/2024</p>
+                            <p>Ngày 05/09, nhà trường đã long trọng tổ chức lễ khai giảng năm học mới với nhiều hoạt động ý nghĩa...</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="https://via.placeholder.com/150x100?text=News2" alt="News 2">
+                        <div class="news-info">
+                            <h4><a href="#">Học sinh THCS Lãng Nga đạt giải cao trong kỳ thi HSG cấp Thành phố</a></h4>
+                            <p class="news-date"><i class="far fa-calendar-alt"></i> 20/08/2024</p>
+                            <p>Chúc mừng các em học sinh đã mang về những thành tích xuất sắc, làm rạng danh nhà trường...</p>
+                        </div>
+                    </div>
+                    <div class="news-item">
+                        <img src="https://via.placeholder.com/150x100?text=News3" alt="News 3">
+                        <div class="news-info">
+                            <h4><a href="#">Hoạt động ngoại khóa "Giáo dục Kỹ năng sống"</a></h4>
+                            <p class="news-date"><i class="far fa-calendar-alt"></i> 15/07/2024</p>
+                            <p>Chương trình giúp các em trang bị những kỹ năng cần thiết để tự tin hội nhập...</p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="view-more">Xem thêm tin tức <i class="fas fa-angle-right"></i></a>
+            </section>
+        </div>
+
+        <aside class="sidebar">
+            <div class="sidebar-box">
+                <h3><i class="fas fa-bullhorn"></i> Thông báo mới nhất</h3>
+                <ul>
+                    <li><a href="#">Thông báo tuyển sinh lớp 6 năm học 2025-2026</a></li>
+                    <li><a href="#">Lịch thi giữa kỳ 1 năm học 2024-2025</a></li>
+                    <li><a href="#">Quy định về đồng phục học sinh</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-box">
+                <h3><i class="fas fa-file-alt"></i> Văn bản chỉ đạo</h3>
+                <ul>
+                    <li><a href="#">Nghị định số 123/2024/NĐ-CP</a></li>
+                    <li><a href="#">Thông tư 22/2024/TT-BGDĐT</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-box">
+                <h3><i class="fas fa-calendar-alt"></i> Lịch công tác</h3>
+                <p>Nội dung lịch công tác sẽ được cập nhật thường xuyên tại đây.</p>
+            </div>
+            <div class="sidebar-box">
+                <h3><i class="fas fa-images"></i> Thư viện ảnh</h3>
+                <div class="gallery-preview">
+                    <img src="https://via.placeholder.com/80x80?text=Gallery1" alt="Gallery 1">
+                    <img src="https://via.placeholder.com/80x80?text=Gallery2" alt="Gallery 2">
+                    <img src="https://via.placeholder.com/80x80?text=Gallery3" alt="Gallery 3">
+                </div>
+                <a href="#" class="view-more">Xem tất cả <i class="fas fa-angle-right"></i></a>
+            </div>
+        </aside>
+    </div>
+
     <footer>
         <div class="container">
-            <p>&copy; 2025 Trường THPT ABC. Tất cả bản quyền đã được bảo lưu.</p>
-            <p>Địa chỉ: Số 123, Đường ABC, Quận XYZ, TP. Hà Nội</p>
-            <p>Điện thoại: (024) 1234 5678 | Email: sthanh05@truonglanga.io.vn </p>
+            <div class="footer-col">
+                <h3><i class="fas fa-map-marker-alt"></i> Địa chỉ</h3>
+                <p>Trường THCS Lãng Nga</p>
+                <p>Xã Lãng Nga, Huyện Yên Hưng, Tỉnh Quảng Ninh</p>
+                <p>Hotline: 0123.456.789</p>
+            </div>
+            <div class="footer-col">
+                <h3><i class="fas fa-link"></i> Liên kết nhanh</h3>
+                <ul>
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Tuyển sinh</a></li>
+                    <li><a href="#">Thư viện</a></li>
+                    <li><a href="#">Liên hệ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3><i class="fas fa-info-circle"></i> Về chúng tôi</h3>
+                <p>Trường THCS Lãng Nga cam kết mang đến môi trường giáo dục chất lượng, phát triển toàn diện cho học sinh.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 TRƯỜNG THCS LÃNG NGA. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
